@@ -15,9 +15,8 @@ namespace Backend
             HttpConfiguration config = new HttpConfiguration();
 
             new MobileAppConfiguration()
-                .UseDefaultConfiguration()
+                //.UseDefaultConfiguration()
                 .ApplyTo(config);
-
 
             /*HttpConfiguration config = ServiceConfig.Initialize(new ConfigBuilder(options, (httpConfig, autofac) =>
             {

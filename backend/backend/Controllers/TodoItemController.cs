@@ -15,7 +15,7 @@ namespace Backend.Controllers
         {
             base.Initialize(controllerContext);
             MobileServiceContext context = new MobileServiceContext();
-            DomainManager = new EntityDomainManager<TodoItem>(context, Request, Services);
+            DomainManager = new EntityDomainManager<TodoItem>(context, Request/*, Services*/);
         }
 
         public IQueryable<TodoItem> GetAllTodoItems()
