@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{B909CF56-97CB-4F82-A123-70486525B271}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{DE766AE8-A8FC-4512-8FAA-CBAE12C9B720}"
+	ProjectSection(SolutionItems) = preProject
+		publish.PublishSettings = publish.PublishSettings
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{884FDB87-35D5-4C86-90B8-F9270027F750}"
 EndProject
