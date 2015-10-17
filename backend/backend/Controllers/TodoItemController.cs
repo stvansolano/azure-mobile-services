@@ -18,7 +18,6 @@ namespace Backend.Controllers
             DomainManager = new EntityDomainManager<TodoItem>(context, Request, Services);
         }
 
-        // GET tables/TodoItem
         public IQueryable<TodoItem> GetAllTodoItems()
         {
             return Query();
