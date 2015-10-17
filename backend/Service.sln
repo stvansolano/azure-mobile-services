@@ -6,17 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{B909CF56-97CB-4F82-A123-70486525B271}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{DE766AE8-A8FC-4512-8FAA-CBAE12C9B720}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{884FDB87-35D5-4C86-90B8-F9270027F750}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\Templates\Services.json = PublishScripts\Templates\Services.json
-		PublishScripts\Templates\Services.param.dev.json = PublishScripts\Templates\Services.param.dev.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Service", "service\Backend.xproj", "{BFBF40C1-7DAC-4F0E-8D5A-ACE4A573B9FE}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Backend", "service\Backend.xproj", "{BFBF40C1-7DAC-4F0E-8D5A-ACE4A573B9FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
