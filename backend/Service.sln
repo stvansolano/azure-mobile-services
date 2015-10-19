@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{DE76
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{884FDB87-35D5-4C86-90B8-F9270027F750}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "backend\Backend.csproj", "{5931E59B-C249-4DFE-8FC8-7D3CB220A089}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Backend", "service\Backend.xproj", "{BFBF40C1-7DAC-4F0E-8D5A-ACE4A573B9FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +20,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5931E59B-C249-4DFE-8FC8-7D3CB220A089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5931E59B-C249-4DFE-8FC8-7D3CB220A089}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5931E59B-C249-4DFE-8FC8-7D3CB220A089}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5931E59B-C249-4DFE-8FC8-7D3CB220A089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFBF40C1-7DAC-4F0E-8D5A-ACE4A573B9FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFBF40C1-7DAC-4F0E-8D5A-ACE4A573B9FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFBF40C1-7DAC-4F0E-8D5A-ACE4A573B9FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFBF40C1-7DAC-4F0E-8D5A-ACE4A573B9FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
