@@ -247,7 +247,8 @@
     <Content Include="Performance\Microsoft.ServiceBus.MessagingPerformanceCounters.man" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\PublishProfiles\mobile-moments-api.pubxml" />
+    <None Include="Properties\PublishProfiles\Service - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Service - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\moments-api.pubxml" />
   </ItemGroup>
   <PropertyGroup>
