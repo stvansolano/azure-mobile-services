@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.OData;
-using Microsoft.Azure.Mobile.Server;
-using Backend.DataObjects;
-using Backend.Models;
+using Microsoft.WindowsAzure.Mobile.Service;
+using Service.DataObjects;
+using Service.Models;
 
-namespace Backend.Controllers
+namespace Service.Controllers
 {
     public class TodoItemController : TableController<TodoItem>
     {
@@ -15,9 +15,10 @@ namespace Backend.Controllers
         {
             base.Initialize(controllerContext);
             MobileServiceContext context = new MobileServiceContext();
-            DomainManager = new EntityDomainManager<TodoItem>(context, Request/*, Services*/);
+            DomainManager = new EntityDomainManager<TodoItem>(context, Request, Services);
         }
 
+        // GET tables/TodoItem
         public IQueryable<TodoItem> GetAllTodoItems()
         {
             return Query();

@@ -939,6 +939,31 @@
           "lib/dnx451/Microsoft.AspNet.Tooling.Razor.dll": {}
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebUtilities/1.0.0-beta5": {
         "dependencies": {
           "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta5"
@@ -988,6 +1013,48 @@
         },
         "runtime": {
           "lib/net45/Microsoft.Azure.KeyVault.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Server/0.2.575": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3",
+          "Microsoft.AspNet.WebApi.Core": "5.2.3",
+          "Newtonsoft.Json": "6.0.8"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Azure.Mobile.Server.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Azure.Mobile.Server.dll": {}
+        },
+        "resource": {
+          "lib/net45/de/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net45/es/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/fr/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/it/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/ja/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ko/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ru/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/zh-Hans/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hant/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "zh-Hant"
+          }
         }
       },
       "Microsoft.Bcl/1.1.9": {
@@ -2507,6 +2574,23 @@
           "lib/dnxcore50/Microsoft.AspNet.Tooling.Razor.dll": {}
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4",
+          "Microsoft.Net.Http": "2.2.22"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        }
+      },
       "Microsoft.AspNet.WebUtilities/1.0.0-beta5": {
         "dependencies": {
           "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta5",
@@ -2548,6 +2632,13 @@
       "Microsoft.Azure.KeyVault/1.0.0": {
         "dependencies": {
           "Microsoft.Azure.Common": "[2.0.4, 3.0)"
+        }
+      },
+      "Microsoft.Azure.Mobile.Server/0.2.575": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3",
+          "Microsoft.AspNet.WebApi.Core": "5.2.3",
+          "Newtonsoft.Json": "6.0.8"
         }
       },
       "Microsoft.Bcl/1.1.9": {
@@ -5210,6 +5301,31 @@
         "lib/dnxcore50/Microsoft.AspNet.Tooling.Razor.xml"
       ]
     },
+    "Microsoft.AspNet.WebApi.Client/5.2.3": {
+      "serviceable": true,
+      "sha512": "3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
+      "files": [
+        "Microsoft.AspNet.WebApi.Client.5.2.3.nupkg",
+        "Microsoft.AspNet.WebApi.Client.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.Client.nuspec",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.3": {
+      "serviceable": true,
+      "sha512": "o90QYlRV8VKR1S7+EcJw9w8WSyVFLl+IIzN8ILZ+n2t6rsc/KS8kBxRzA7wCFPRUHhebCfLqilBk39phvanx3g==",
+      "files": [
+        "Microsoft.AspNet.WebApi.Core.5.2.3.nupkg",
+        "Microsoft.AspNet.WebApi.Core.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.Core.nuspec",
+        "Content/web.config.transform",
+        "lib/net45/System.Web.Http.dll",
+        "lib/net45/System.Web.Http.xml"
+      ]
+    },
     "Microsoft.AspNet.WebUtilities/1.0.0-beta5": {
       "serviceable": true,
       "sha512": "Ieb9JeaI57V2HRWyFsQE+Ioo7jRE7gp8QgmHAgCuc58RfUUvKf3BdmjMMqw+0DfOQMf4VL9xWpj0yQ/bMA1VDA==",
@@ -5259,6 +5375,27 @@
         "lib/net40/Microsoft.Azure.KeyVault.xml",
         "lib/net45/Microsoft.Azure.KeyVault.dll",
         "lib/net45/Microsoft.Azure.KeyVault.xml"
+      ]
+    },
+    "Microsoft.Azure.Mobile.Server/0.2.575": {
+      "serviceable": true,
+      "sha512": "eD6hSMevr4Ofc+qHQGJTYkYJkTh43nZombCRW7Y4vFi0kimFHtamr3rtWIArbESq2fVu20zGQr0N/dSzVsX8DA==",
+      "files": [
+        "Microsoft.Azure.Mobile.Server.0.2.575.nupkg",
+        "Microsoft.Azure.Mobile.Server.0.2.575.nupkg.sha512",
+        "Microsoft.Azure.Mobile.Server.nuspec",
+        "readme.txt",
+        "lib/net45/Microsoft.Azure.Mobile.Server.dll",
+        "lib/net45/Microsoft.Azure.Mobile.Server.xml",
+        "lib/net45/de/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net45/es/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net45/fr/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net45/it/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net45/ja/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net45/ko/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net45/ru/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net45/zh-Hans/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net45/zh-Hant/Microsoft.Azure.Mobile.Server.resources.dll"
       ]
     },
     "Microsoft.Bcl/1.1.9": {
@@ -7925,7 +8062,8 @@
       "Microsoft.Azure.KeyVault >= 1.0.0",
       "System.Spatial >= 5.6.4",
       "Microsoft.Data.Edm >= 5.6.3",
-      "WindowsAzure.Storage >= 6.0.1-preview"
+      "WindowsAzure.Storage >= 6.0.1-preview",
+      "Microsoft.Azure.Mobile.Server >= 0.2.575"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
