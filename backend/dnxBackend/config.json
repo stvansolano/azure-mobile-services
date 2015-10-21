@@ -1,0 +1,17 @@
+{
+  "MicrosoftAzureStorage": {
+    "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=momentsmedia;AccountKey=mlEnCMJk46fyWtIN8NK3nuh3UDrEvZ+6nYuO/lw1cdKzOhlVoxG4a51utKiOv3kPxUG7/K5z3v5wITzmWk5WlA==",
+    "BlobContainer": "container1"
+  },
+
+  "Authentication": {
+    "TwitterAccount": {
+      "ConsumerKey": "TcZ4H3Rg92YKwlTKDsestfO8S",
+      "ConsumerSecret": "ldALPeUtFfT5W6nFuD9Y6CY4vIRgdeLdzW9k9Z88bZuaUXesrv"
+    }
+  },
+
+  "FromMobileService": {
+    "MS_TableConnectionString" : "Data Source=hn5t07acko.database.windows.net;Initial Catalog=moments-mobile_db;User ID=gxmtJLgEYDLogin_moments-mobile;Password=Oe13Of327583zZ$$;Asynchronous Processing=True;TrustServerCertificate=False;"
+  }
+}

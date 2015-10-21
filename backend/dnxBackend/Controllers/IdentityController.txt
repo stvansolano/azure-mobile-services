@@ -1,0 +1,62 @@
+﻿using System.Collections.Generic;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
+using Microsoft.AspNet.Mvc;
+
+namespace Backend.Controllers
+{
+    public class IdentityController<TUser, TDbContext> : Controller
+    where TUser : IdentityUser
+    where TDbContext : IdentityDbContext, new()
+    {
+        public IdentityController()
+        : this(new UserManager<TUser>(
+        new UserStore<TUser>(new TDbContext())))
+        {
+        }
+        public IdentityController(UserManager<TUser> userManager)
+        {
+            UserManager = userManager;
+        }
+        protected UserManager<TUser> UserManager { get; set; }
+        protected IAuthenticationManager AuthenticationManager
+        {
+            get { return /*HttpContext.GetOwinContext().Authentication;*/ null; }
+        }
+        protected async Task SignInAsync(
+          TUser user, bool isPersistent)
+        {
+            AuthenticationManager.SignOut(
+            DefaultAuthenticationTypes.ExternalCookie);
+            var identity = await UserManager.CreateIdentityAsync(user,
+              DefaultAuthenticationTypes.ApplicationCookie);
+            AuthenticationManager.SignIn(
+              new AuthenticationProperties
+              {
+                  IsPersistent = isPersistent
+              },
+                identity);
+        }
+        /*
+        protected ActionResult RedirectToLocal(string returnUrl)
+        {
+            if (Url.IsLocalUrl(returnUrl))
+            {
+                return Redirect(returnUrl);
+            }
+            return RedirectToAction("Index", "Home");
+        }
+        */
+
+        protected ClaimsIdentity GetBasicUserIdentity(string name)
+        {
+            var claims = new List<Claim> {
+          new Claim(ClaimTypes.Name, name) };
+            return new ClaimsIdentity(
+              claims, DefaultAuthenticationTypes.ApplicationCookie);
+        }
+    }
+}

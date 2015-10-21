@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{B909CF56-97CB-4F82-A123-70486525B271}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{DE766AE8-A8FC-4512-8FAA-CBAE12C9B720}"
+	ProjectSection(SolutionItems) = preProject
+		publish.PublishSettings = publish.PublishSettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{884FDB87-35D5-4C86-90B8-F9270027F750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{D7892D58-5697-475A-B422-7D5C211D2A4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7892D58-5697-475A-B422-7D5C211D2A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7892D58-5697-475A-B422-7D5C211D2A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7892D58-5697-475A-B422-7D5C211D2A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7892D58-5697-475A-B422-7D5C211D2A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE766AE8-A8FC-4512-8FAA-CBAE12C9B720} = {B909CF56-97CB-4F82-A123-70486525B271}
+		{884FDB87-35D5-4C86-90B8-F9270027F750} = {B909CF56-97CB-4F82-A123-70486525B271}
+	EndGlobalSection
+EndGlobal
