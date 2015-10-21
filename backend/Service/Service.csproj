@@ -247,9 +247,8 @@
     <Content Include="Performance\Microsoft.ServiceBus.MessagingPerformanceCounters.man" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\PublishProfiles\Service - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\Service - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\moments-api.pubxml" />
+    <None Include="Properties\PublishProfiles\Azure Mobile Service - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Azure Mobile Service - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
