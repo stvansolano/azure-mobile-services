@@ -1,14 +1,16 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Http.Controllers;
-using System.Web.Http.OData;
-using Microsoft.WindowsAzure.Mobile.Service;
-using Service.DataObjects;
-using Service.Models;
-
-namespace Service.Controllers
+﻿namespace Service.Controllers
 {
+    using System.Linq;
+    using System.Threading.Tasks;
+    using System.Web.Http;
+    using System.Web.Http.Controllers;
+    using System.Web.Http.OData;
+    using Microsoft.WindowsAzure.Mobile.Service;
+    using DataObjects;
+    using Models;
+    using Microsoft.WindowsAzure.Mobile.Service.Security;
+
+    [AuthorizeLevel(AuthorizationLevel.Anonymous)]
     public class TodoItemController : TableController<TodoItem>
     {
         protected override void Initialize(HttpControllerContext controllerContext)

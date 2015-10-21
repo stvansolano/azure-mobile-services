@@ -21,7 +21,7 @@
 
         protected void AllocateProperty(string property, string defaultValue)
         {
-            Tuple.Properties[property] = new EntityProperty(defaultValue);
+            //Tuple.Properties[property] = new EntityProperty(defaultValue);
         }
 
         protected void SetValue(string property, string value)
@@ -41,7 +41,7 @@
 
         protected void SetValue(string property, DateTime? value)
         {
-            Tuple.Properties[property].DateTime = value;
+            //Tuple.Properties[property].DateTime = value;
         }
 
         protected void AllocateProperty(string property, bool defaultValue)
@@ -51,7 +51,7 @@
 
         protected void AllocateProperty(string property, DateTime? defaultValue)
         {
-            Tuple.Properties[property] = new EntityProperty(defaultValue);
+            //Tuple.Properties[property] = new EntityProperty(defaultValue);
         }
 
         protected void AllocateProperty(string property, int? defaultValue)
@@ -88,12 +88,12 @@
 
         protected DateTime? FromStoredPropertyDateTime(DynamicTableEntity storage, string property)
         {
-            return storage.Properties[property].DateTime;
+            return /*storage.Properties[property].DateTime*/ null;
         }
 
         protected int? FromStoredPropertyInt32(DynamicTableEntity storage, string property)
         {
-            return storage.Properties[property].Int32Value;
+            return /*storage.Properties[property].Int32Value*/ null;
         }
     }
 }

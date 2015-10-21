@@ -22,6 +22,7 @@ namespace Service
             // To display errors in the browser during development, uncomment the following
             // line. Comment it out again when you deploy your service for production use.
             // config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
+            config.SetIsHosted(true);
 
             Database.SetInitializer(new MobileServiceInitializer());
         }
@@ -31,13 +32,13 @@ namespace Service
     {
         protected override void Seed(MobileServiceContext context)
         {
-            List<TodoItem> todoItems = new List<TodoItem>
+            var todoItems = new List<TodoItem>
             {
                 new TodoItem { Id = Guid.NewGuid().ToString(), Text = "First item", Complete = false },
                 new TodoItem { Id = Guid.NewGuid().ToString(), Text = "Second item", Complete = false },
             };
 
-            foreach (TodoItem todoItem in todoItems)
+            foreach (var todoItem in todoItems)
             {
                 context.Set<TodoItem>().Add(todoItem);
             }
