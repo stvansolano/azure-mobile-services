@@ -1,9 +1,8 @@
-﻿using System.Web.Http;
-using System.Web.Routing;
-
-namespace Service
+﻿namespace Backend
 {
-    public class WebApiApplication : System.Web.HttpApplication
+    using System.Web;
+
+    public class WebApiApplication : HttpApplication
     {
         protected void Application_Start()
         {

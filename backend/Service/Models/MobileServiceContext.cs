@@ -1,12 +1,11 @@
-﻿using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Linq;
-using Microsoft.WindowsAzure.Mobile.Service;
-using Microsoft.WindowsAzure.Mobile.Service.Tables;
-using Service.DataObjects;
-
-namespace Service.Models
+﻿namespace Backend.Models
 {
+    using DataObjects;
+    using Microsoft.WindowsAzure.Mobile.Service;
+    using Microsoft.WindowsAzure.Mobile.Service.Tables;
+    using System.Data.Entity;
+    using System.Data.Entity.ModelConfiguration.Conventions;
+    using System.Linq;
 
     public class MobileServiceContext : DbContext
     {

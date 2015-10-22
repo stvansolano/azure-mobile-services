@@ -13,7 +13,7 @@ namespace Backend
     using System.Collections.Generic;
     using Microsoft.WindowsAzure.Mobile.Service.Security;
 
-    [AuthorizeLevel(AuthorizationLevel.Anonymous)]
+    [AuthorizeLevel(AuthorizationLevel.User)]
 
     public class MomentsController : BaseController
     {

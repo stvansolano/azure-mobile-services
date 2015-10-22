@@ -1,4 +1,4 @@
-﻿namespace Service.Controllers
+﻿namespace Backend.Controllers
 {
     using System.Linq;
     using System.Threading.Tasks;
@@ -9,15 +9,22 @@
     using DataObjects;
     using Models;
     using Microsoft.WindowsAzure.Mobile.Service.Security;
+    using System.Data.Entity;
 
     [AuthorizeLevel(AuthorizationLevel.Anonymous)]
     public class TodoItemController : TableController<TodoItem>
     {
+        protected MobileServiceContext DbContext { get; private set; }
+
+        public TodoItemController()
+        {
+            DbContext = new MobileServiceContext();
+        }
+
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
-            MobileServiceContext context = new MobileServiceContext();
-            DomainManager = new EntityDomainManager<TodoItem>(context, Request, Services);
+            DomainManager = new EntityDomainManager<TodoItem>(DbContext, Request, Services);
         }
 
         // GET tables/TodoItem
